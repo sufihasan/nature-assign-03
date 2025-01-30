@@ -9,19 +9,45 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/026ffa0ec5.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'p-green': '#179800',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+    </style>
+
 
 </head>
 
-<body>
+<body class="sora-font">
     <!-- header start -->
-    <header class="md:container mx-auto">
+    <header class="container mx-auto">
         <!-- navbar start -->
         <nav class="mt-2">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                    <!-- sss -->
-                    <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
-                    <img src="c2-assets/logo-header.png" alt="">
+
+                    <img class="h-10 md:h-auto" src="c2-assets/logo-header.png" alt="">
 
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -31,26 +57,32 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
+
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <a class="hidden lg:block" href=""><i class="fa-solid fa-magnifying-glass text-2xl mr-4"></i></a>
+                    <a class="hidden lg:block " href=""><i class="fa-solid fa-cart-shopping text-2xl mr-4"></i></a>
+                    <a class="btn btn-outline pt-4  hidden lg:block mr-3 hover:bg-green-500">Login</a>
+                    <a class="btn pt-4 bg-p-green hidden lg:block text-white">Register</a>
+
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+
+                            <i class="fa-solid fa-bars text-4xl text-p-green"></i>
                         </div>
+
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            class="md:hidden relative -left-20 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><a>Product</a></li>
                             <li><a>Services</a></li>
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </nav>
+
+
     </header>
 
     <!-- main start -->
