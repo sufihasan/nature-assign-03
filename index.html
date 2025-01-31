@@ -44,7 +44,7 @@
     <!-- header start -->
     <header class=" bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
         <!-- navbar start -->
-        <nav class="container mx-auto pt-2 md:pt-3 border  border-green-600">
+        <nav class="container mx-auto pt-2 md:pt-3 border  border-green-600 md:border-none">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
 
@@ -85,11 +85,14 @@
 
         <!-- banner section -->
         <section class="mt-12 md:mt-20">
-            <div class="container mx-auto border">
+            <div class="container mx-auto">
                 <h1 class="text-center text-3xl md:text-5xl 
                 font-semibold">Freshness <span class="text-p-green">You Can
                         <br>
-                        Count</span> On, Prices You will Love!</h1>
+                        Count</span> On, Prices You will Love! <svg
+                        class="absolute animate-bounce w-8 h-8 bg-p-green rounded-full">
+                    </svg></h1>
+
 
                 <p class="text-center mt-4 md:mt-7 md:text-xl">Shop your daily essentials at unbeatable
                     prices. From fresh produce to pantry <br>
@@ -115,7 +118,7 @@
 
             <div class="md:container mx-auto p-2 md:p-0">
                 <h1 class="text-4xl font-semibold mb-4 text-p-green">Services</h1>
-                <div class="border grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                <div class=" grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
 
                     <div class="card bg-base-100   bg-p-gray">
                         <figure class="px-10 pt-10">
@@ -125,7 +128,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">24/7 Services </h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p>Here you can also get 24 hour service 7 days</p>
 
                         </div>
                     </div>
@@ -139,7 +142,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Fast Delivery</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p>We delivery team work fast and correct</p>
 
                         </div>
                     </div>
@@ -153,7 +156,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Healthy Products</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p>We provide helthy product and fresh.It makes you helthy</p>
 
                         </div>
                     </div>
@@ -315,6 +318,25 @@
                 </div>
             </div>
         </section>
+        <!-- donet -->
+        <section class="mt-8">
+            <div class="md:container mx-auto p-2">
+                <h1 class="text-4xl font-semibold mb-4 text-p-green">Donet</h1>
+
+                <div class="hero" style="background-image: url('c2-assets/download.jpeg');">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-neutral-content text-center py-10">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Donet Here</h1>
+                            <p class="mb-5">
+                                You can donet poor people. Many people of our country are poor.
+                            </p>
+                            <button class="btn bg-p-green text-white">Donet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- arival and offer section -->
         <section class="mt-8">
@@ -360,22 +382,55 @@
 
                 </div>
             </div>
+
+            <div class="relative top-72 md:top-44">
+                <div class="hero bg-base-200 w-[90%]  md:w-3/4 mx-auto rounded-lg">
+                    <div class="hero-content flex-col lg:flex-row py-10">
+                        <div>
+                            <img class="md:w-3/4 md:mx-auto" src="c2-assets/vegetable-busket.png" alt="">
+                        </div>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold">Get Grocery News!</h1>
+                            <p class="py-6">
+                                Now we provide fresh item.It makes you helthy and happy.
+
+                            </p>
+                            <input type="text" placeholder="Enter Email" class="input w-full max-w-xs" /> <br>
+                            <button class="btn btn-primary mt-6 bg-p-green text-white">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
 
-        <section class="h-96">
-
-        </section>
-        <section class="h-96">
-
-        </section>
 
     </main>
 
-    <!-- footer start -->
-    <footer>
+    <!-- footer start  -->
+    <footer class="footer bg-p-green text-base-content pt-80 px-10 p-10 text-white">
+        <nav>
+            <img src="c2-assets/logo-footer.png" alt="">
+            <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+        </nav>
+        <nav class="md:space-y-3">
 
+            <a class="link link-hover">Product</a>
+            <a class="link link-hover">Survice</a>
+            <a class="link link-hover">Contact Us</a>
+
+        </nav>
+        <nav class="md:mt-8">
+            <h6 class="">Follow Us</h6>
+            <div class="grid grid-flow-col gap-4">
+                <a><i class="fa-brands fa-facebook text-xl"></i></a>
+                <a><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a><i class="fa-brands fa-youtube text-xl"></i></a>
+
+
+            </div>
+        </nav>
     </footer>
 
 </body>
